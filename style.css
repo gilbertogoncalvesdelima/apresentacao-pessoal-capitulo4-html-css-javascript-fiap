@@ -30,6 +30,9 @@ body {
 .tituloHeader {
   font-size: 19px;
 }
+.bodyGeral {
+  margin-top: 100px;
+}
 /* Configurando nosso container */
 .containerBory {
   background-color: black; /*Cor de fundo*/
@@ -39,7 +42,6 @@ body {
   padding: 42px 30px; /*Preechimento dos cantos*/
   border-radius: 20px; /*Arredondamento dos cantos*/
   animation: flipContainer 2s;
-  margin-top: 50px;
 }
 div.containerBory {
   background-image: url("images/foto1.png");
