@@ -15,7 +15,7 @@ body {
 body {
   font-family: arial;
   background: #434750; /*Cor de fundo*/
-  font-family: 'Montserrat', sans-serif; /*Tipo de fonte*/
+  font-family: "Montserrat", sans-serif; /*Tipo de fonte*/
   font-size: 12pt; /*Tamanho da fonte*/
   font-weight: normal; /*Espessura da fonte*/
   color: #fff; /*Cor da fonte*/
@@ -39,9 +39,10 @@ body {
   padding: 42px 30px; /*Preechimento dos cantos*/
   border-radius: 20px; /*Arredondamento dos cantos*/
   animation: flipContainer 2s;
+  margin-top: 50px;
 }
 div.containerBory {
-  background-image: url('images/foto1.png');
+  background-image: url("images/foto1.png");
 }
 /*Esta animação é bem legal, vai fazer girar o titulo*/
 @keyframes flipContainer {
@@ -180,7 +181,7 @@ ul li:hover a {
 }
 /* #2 */
 ul li::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: -40px;
@@ -197,7 +198,7 @@ ul li::before {
   transition: background-color 0.5s;
 }
 ul li::after {
-  content: '';
+  content: "";
   position: absolute;
   top: -40px;
   left: 0;
