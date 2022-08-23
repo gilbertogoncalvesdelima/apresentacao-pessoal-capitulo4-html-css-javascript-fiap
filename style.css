@@ -1,0 +1,240 @@
+/* Reset padrão */
+* {
+  margin: 0; /*Margem*/
+  padding: 0; /*Preechimento dos cantos*/
+}
+
+/* Definindo que os elementos html e body ocuparão toda tela */
+html,
+body {
+  width: 100%; /*Largura*/
+  height: 100%; /*Altura*/
+}
+
+/* Configurando o corpo do site */
+body {
+  font-family: arial;
+  background: #434750; /*Cor de fundo*/
+  font-family: 'Montserrat', sans-serif; /*Tipo de fonte*/
+  font-size: 12pt; /*Tamanho da fonte*/
+  font-weight: normal; /*Espessura da fonte*/
+  color: #fff; /*Cor da fonte*/
+  text-align: center; /*Alinhamento do texto*/
+  display: flex; /*Alinhamento no centro da tela*/
+  flex-direction: column; /*Alinhamento*/
+  justify-content: center; /*Alinhamento*/
+  align-items: center; /*Alinhamento*/
+  box-sizing: border-box; /*Tamanho da caixa, moldura*/
+}
+
+.tituloHeader {
+  font-size: 19px;
+}
+/* Configurando nosso container */
+.containerBory {
+  background-color: black; /*Cor de fundo*/
+  color: rgb(51, 51, 51); /*Cor da fonte*/
+  width: 420px; /*Largura*/
+  min-height: 500px; /*Altura minima*/
+  padding: 42px 30px; /*Preechimento dos cantos*/
+  border-radius: 20px; /*Arredondamento dos cantos*/
+  animation: flipContainer 2s;
+}
+div.containerBory {
+  background-image: url('images/foto1.png');
+}
+/*Esta animação é bem legal, vai fazer girar o titulo*/
+@keyframes flipContainer {
+  from {
+    transform: rotateX(90deg);
+  }
+  to {
+    transform: rotateX(0deg);
+  }
+}
+
+.titulo {
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+  width: 70%; /*Largura*/
+  padding: 12px 16px; /*Preechimento dos cantos*/
+  margin-top: 5px; /*Margem Superior*/
+  margin-bottom: 18px; /*Margem Inferior*/
+  margin-left: auto; /*Margem esquerda*/
+  margin-right: auto; /*Margem direita*/
+  line-height: 1.35em; /*Altura da linha*/
+  animation: flipTitulo 5s;
+}
+/*Esta animação é bem legal, vai fazer girar o titulo*/
+@keyframes flipTitulo {
+  from {
+    transform: rotateX(90deg);
+  }
+  to {
+    transform: rotateX(0deg);
+  }
+}
+
+/* Configurando nosso rodapé */
+footer {
+  color: rgb(255, 255, 255); /*Cor da letra*/
+  margin: 1.3em; /*Margem, espaço lateral do footer*/
+}
+
+/* Ícones para redes sociais */
+.fa {
+  margin: 10px 2px; /*Margem, espaço lateral dos icones*/
+  color: #fff; /*Cor dos desenhos, das redes sociais*/
+  font-size: 1.25em !important; /*Tamanho da fonte*/
+  padding: 20px; /*Preechimento dos cantos*/
+  width: 20px; /*Largura*/
+  text-align: center; /*Alinhamento do texto*/
+  text-decoration: none; /* [none (Sem decoração)],  [underline red (sublinhado red)], [underline wavy cor (Sublinhado ondulado cor)] */
+
+  border-radius: 50%; /*Arredondamento dos cantos, do botão*/
+  border-style: solid; /*Estilo da borda*/
+  border-width: 2px; /*Largura da borda*/
+  border-color: rgb(255, 255, 255); /*Cor da borda dos icones*/
+  animation: flipWhatsApp 5s;
+}
+
+/* Definindo transição */
+.fa:hover {
+  transition: all 0.35s; /*Tempo apos passado o mouse em cima vai carregar a cor, dos icones*/
+}
+
+/* Cor verde para o Whatsapp */
+.fa-whatsapp:hover,
+.fa-whatsapp:focus {
+  background-color: #00b489; /*Cor do fundo do botão*/
+  border-color: #00b489; /*Cor da borda do botão*/
+}
+
+/*Esta animação é bem legal, vai fazer girar o titulo*/
+@keyframes flipWhatsApp {
+  from {
+    transform: rotateX(90deg);
+  }
+  to {
+    transform: rotateX(0deg);
+  }
+}
+
+/* Cor vermelha alaranjada para o Instagram */
+.fa-instagram:hover,
+.fa-instagram:focus {
+  background-color: tomato; /*Cor do fundo do botão*/
+  border-color: tomato; /*Cor da borda do botão*/
+}
+
+/* Cor azul para o Facebook */
+.fa-facebook:hover,
+.fa-facebook:focus {
+  background-color: #3b5998; /*Cor do fundo do botão*/
+  border-color: #3b5998; /*Cor da borda do botão*/
+}
+
+/* Cor vermelha para o YouTube */
+.fa-youtube:hover,
+.fa-youtube:focus {
+  background-color: #bb0000; /*Cor do fundo do botão*/
+  border-color: #bb0000; /*Cor da borda do botão*/
+}
+
+/* 3d Menu */
+.menu3d {
+  margin-left: 30px;
+  margin-top: 100px;
+  text-align: center; /*Alinhamento do texto*/
+  display: flex; /*Alinhamento no centro da tela*/
+  flex-direction: column; /*Alinhamento*/
+  justify-content: center; /*Alinhamento*/
+  align-items: center; /*Alinhamento*/
+}
+/* #1 */
+
+a {
+  text-decoration: none;
+}
+ul {
+  position: relative;
+  transform: skewY(-15deg);
+  list-style: none;
+}
+ul li {
+  position: relative;
+  width: 200px;
+  background-color: #3e3f46;
+}
+ul li a {
+  display: block;
+  padding: 15px;
+  color: #999999;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  transition: color 0.5s;
+}
+ul li:hover a {
+  color: #ffffff;
+}
+/* #2 */
+ul li::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -40px;
+  width: 40px;
+  height: 100%;
+  background-color: red;
+  transform: skewY(45deg);
+  transform-origin: right; /* 
+Define as coordenadas do ponto em relação ao qual o elemento será transformado. */
+}
+/* #3 */
+ul li::before {
+  background-color: #2e3133;
+  transition: background-color 0.5s;
+}
+ul li::after {
+  content: '';
+  position: absolute;
+  top: -40px;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  background-color: red;
+  transform: skewX(45deg);
+  transform-origin: bottom;
+  transition: background-color 0.5s;
+}
+/* #4 установить style в разметке */
+ul li {
+  z-index: var(--i);
+}
+ul li::after {
+  background-color: #35383e;
+}
+body {
+  background-color: #434750;
+}
+ul li:hover {
+  background-color: #33a3ee;
+}
+ul li {
+  transition: 0.5s;
+}
+/* #6 */
+ul li:hover {
+  transform: translateX(-50px);
+}
+ul li:hover::before {
+  background-color: #2982b9;
+}
+
+ul li:hover::after {
+  background-color: #2982b9;
+}
+ul li:last-child::after {
+  box-shadow: -120px 120px 20px #000000b6;
+}

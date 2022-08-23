@@ -1,0 +1,143 @@
+<!--Projeto Identificador de Idade-->
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <!--------------------------------------------Cabeça-------------------------------------------------------->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--Descrição do projeto -->
+  <meta name="description" content="Descubra uma foto, com o ano de nascimento.">
+
+  <!--Autor do projeto -->
+  <meta author="Engenheiro Youtuber">
+
+  <!--Definição do internet explorer, compatibilidade versão automatica-->
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!--Conectar arquivo estyle.css-->
+  <link rel="stylesheet" href="style.css">
+
+  <!--Titulo da Página, superior-->
+  <title>Identificador de Idade</title>
+
+  <!-- Ícones do FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+  <!-- ---------------------------------------------------------------------------------------------------- -->
+
+  <!--onload="atualizaAnoRodape()" Ao carregar o <body> ativamos esta função que criamos em JavaScript para atualizar 
+o ano no rodapé do nosso site-->
+
+
+  <body onload="atualizaAnoRodape()">
+
+
+
+
+    <!--------------------------------------------Corpo-------------------------------------------------------->
+
+
+
+    <!-- inicio: .container -->
+    <div class="containerBory" id="q1">
+
+
+
+
+
+      <!-- Caixa amarela com dica do que esse programa faz -->
+      <header class="titulo">
+        <marquee direction="left">
+          <h1 class="tituloHeader"> Seja, <strong>Bem Vindo!</strong></h1>
+        </marquee>
+      </header>
+
+
+
+
+
+      <div>
+        <nav class="menu3d">
+          <ul>
+            <!-- style дописываем перед шагом #4 -->
+            <li style="--i: 6;"><a href="https://www.instagram.com/engenheiroyoutuber/" target="_black">Home</a></li>
+            <li style="--i: 5;"><a href="..." target="_black">About</a></li>
+            <li style="--i: 4;"><a href="..." target="_black">Contacts</a></li>
+            <li style="--i: 3;"><a href="..." target="_black">News</a></li>
+            <li style="--i: 2;"><a href="..." target="_black">Articles</a></li>
+            <li style="--i: 1;"><a href="..." target="_black">Blog</a></li>
+          </ul>
+        </nav>
+      </div>
+
+    </div>
+    <!-- fim: .container -->
+
+
+
+    <!------------------------------------ início: footer-------------------------------------------->
+    <footer>
+      <!-- 
+          Se lembra da função 'atualizaAnoRodape()'?
+          Ela atualiza o que está dentro do <span> abaixo
+         -->
+      <p class="copy">&copy; Gilberto Gonçalves de Lima <span class="ano">20xx</span></p>
+
+      <!-- Link do meu Whatsapp -->
+      <a href="..." title="Mande uma mensagem pra mim" class="fa fa-whatsapp"></a>
+
+      <!-- Link do meu Instagram -->
+      <a href="https://www.instagram.com/engenheiroyoutuber/" title="Siga meu instagram" class="fa fa-instagram"></a>
+
+      <!-- Link do meu Facebook -->
+      <a href="..." title="Seja meu amigo no Facebook" class="fa fa-facebook"></a>
+
+      <!-- Link do meu canal no YouTube -->
+      <a href="https://www.youtube.com/channel/UCyHYZQXFZLdGUFGZOV54RKA?view_as=subscriber" title="Conheça meu canal"
+        class="fa fa-youtube"></a>
+      <br>
+      <br>
+      <audio style="width: 100%;" controls Loop autoplay>
+        <source src="audio/dj.mp3" type="audio/mpeg">
+      </audio>
+  </body>
+  <br>
+
+  <!-- autoplay com controle-->
+  <!--<audio style = "width: 100%;" controls autoplay> -->
+
+  <!-- autoplay sem controle-->
+  <!--  <audio style = "width: 100%;" autoplay> -->
+
+  <!--Loop-->
+  <!-- <audio style = "width: 100%;" controls Loop> -->
+
+  <!--muted-->
+  <!--<audio style = "width: 100%;" controls muted>-->
+
+  <!--Desabilitando volume-->
+  <!--<audio style = "width: 100%;" controls preload = "none"> -->
+  <!-- -------------------------------------------------------------------------------------------------- -->
+
+  </footer>
+
+  <!------------------------------------ Fim: footer-------------------------------------------->
+
+
+
+  <!--Conectar arquivo script.js-->
+  <script src="script.js"></script>
+
+</body>
+
+</html>
