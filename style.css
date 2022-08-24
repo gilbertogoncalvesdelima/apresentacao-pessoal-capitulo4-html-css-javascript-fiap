@@ -45,6 +45,8 @@ body {
 }
 div.containerBory {
   background-image: url("images/foto1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 /*Esta animação é bem legal, vai fazer girar o titulo*/
 @keyframes flipContainer {
